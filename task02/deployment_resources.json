@@ -24,17 +24,15 @@
     },
     "resource_type": "iam_policy"
   },
-  "LambdaUrlFunctionPolicy": {
+  "LambdaURLFuncPolicy": {
     "resource_type": "iam_policy",
     "policy_content": {
       "Version": "2012-10-17",
       "Statement": [
         {
-          "StatementId": "FunctionURLAllowPublicAccess",
           "Effect": "Allow",
-          "Principal": "*",
           "Action": "lambda:InvokeFunctionUrl",
-          "Resource": "arn:aws:lambda:eu-central-1:905418349556:function:cmtr-3ce20f94-hello_world",
+          "Resource": "arn:aws:lambda:eu-central-1:905418349556:function:hello_world",
           "Condition": {
             "StringEquals": {
               "lambda:FunctionUrlAuthType": "NONE"
