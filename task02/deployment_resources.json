@@ -25,9 +25,7 @@
     "resource_type": "iam_policy"
   },
   "LambdaURLFuncPolicy": {
-    "resource_type": "iam_policy",
     "policy_content": {
-      "Version": "2012-10-17",
       "Statement": [
         {
           "Effect": "Allow",
@@ -39,7 +37,9 @@
             }
           }
         }
-      ]
-    }
+      ],
+      "Version": "2012-10-17"
+    },
+    "resource_type": "iam_policy"
   }
 }

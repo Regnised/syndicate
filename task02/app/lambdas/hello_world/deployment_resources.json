@@ -1,6 +1,8 @@
 {
   "hello_world-role": {
-    "predefined_policies": [],
+    "predefined_policies": [
+      "LambdaURLFuncPolicy"
+    ],
     "principal_service": "lambda",
     "custom_policies": [
       "lambda-basic-execution"
